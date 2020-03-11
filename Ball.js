@@ -4,7 +4,7 @@ class Ball {
 
         this.x = x;
         this.y = y;
-        this.yspeed = -4;
+        this.yspeed = -10;
 
     }
 
