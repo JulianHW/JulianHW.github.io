@@ -7,11 +7,13 @@ class Enemy {
         this.y = y;
         this.yspeed = yspeed;
         this.spaceshipVar= loadImage('spaceship.png');
+        this.xspeed = random(0, 2);
     }
 
     move() {
 
         this.y += this.yspeed;
+        this.x += this.xspeed;
 
         if (this.y >= width && this.y <  650) {
 
