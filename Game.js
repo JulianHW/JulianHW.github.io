@@ -54,6 +54,15 @@ function draw() {
         }
 
         // ---------------------------------------------
+        
+        for (var i = 0; i < enemyCircles.length; i++) {
+
+            enemyCircles[i].move();
+            enemyCircles[i].show();
+
+        }
+
+        // ---------------------------------------------
 
         for (var i = 0; i < enemies.length; i++) {
 
@@ -68,6 +77,7 @@ function draw() {
         collisionCheck();
         newWave();
         scoreDisplay();
+        enemyFire();
 
     } else {
 
