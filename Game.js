@@ -55,11 +55,11 @@ function draw() {
 
         // ---------------------------------------------
         
-        for (var i = 0; i < enemyCircles.length; i++) {
-
+        for (var i = 0; i < nemyCircles.length; i ++) {
+            
             enemyCircles[i].move();
             enemyCircles[i].show();
-
+            
         }
 
         // ---------------------------------------------
@@ -213,18 +213,15 @@ function enemyFire() {
     
     for (var i = 0; i < enemies; i ++) {
         
-        //randNum = random(0, 100);
+        randNum = random(0, 100);
         
-        //if (randNum <= 1) {
+        if (randNum <= 1) {
             
             //enemies[i].fire();
             
-            //enemyCircles.push(new Ball(enemies[i].x, enemies[i].y, 10));
+            enemyCircles.push(new Ball(enemies[i].x, enemies[i].y, 10));
             
-        //}
-        
-        enemies[i].fire();
-        enemyCircles.push(new Ball(enemies[i].x, enemies[i].y, 10));
+        }
         
     }
     
