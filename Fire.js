@@ -1,10 +1,10 @@
 class Ball {
 
-    constructor(x, y) {
+    constructor(x, y, yspeed) {
 
         this.x = x;
         this.y = y;
-        this.yspeed = -10;
+        this.yspeed = yspeed;
 
     }
 
