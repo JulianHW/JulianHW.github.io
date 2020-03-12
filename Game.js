@@ -42,7 +42,7 @@ function draw() {
     if (alive == true) {
 
         image(spaceship2, mouseX - 12.5, 537.5);
-
+        enemyFire();
 
         // ---------------------------------------------
 
@@ -77,7 +77,6 @@ function draw() {
         collisionCheck();
         newWave();
         scoreDisplay();
-        enemyFire();
 
     } else {
 
