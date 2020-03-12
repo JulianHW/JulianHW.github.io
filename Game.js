@@ -212,9 +212,9 @@ function restart() {
 
 function enemyFire() {
     
-    for (var i = 0; i < enemyCircles; i ++) {
+    for (var i = 0; i < enemies; i ++) {
         
-        randNum = random(0, 100);
+        randNum = random(0, 1000);
         
         if (randNum <= 1) {
             
