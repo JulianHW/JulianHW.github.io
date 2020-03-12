@@ -214,7 +214,7 @@ function enemyFire() {
     
     for (var i = 0; i < enemyCircles; i ++) {
         
-        randNum = random(0, 1000);
+        randNum = random(0, 100);
         
         if (randNum <= 1) {
             
