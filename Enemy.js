@@ -33,5 +33,11 @@ class Enemy {
         //ellipse(this.x, this.y, 25, 25);
 
     }
+    
+    fire() {
+        
+        enemyCircles.push(new Ball(this.x, this.y, 10))
+        
+    }
 
 }
