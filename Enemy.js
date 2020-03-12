@@ -1,18 +1,13 @@
 
 class Enemy {
 
-    constructor(x, y, yspeed) {
+    constructor(x, y, yspeed, xspeed) {
 
         this.x = x;
         this.y = y;
         this.yspeed = yspeed;
         this.spaceshipVar= loadImage('spaceship.png');
-        
-        if (wave >= 2) {
-            
-            this.xspeed = random(0, 2);
-            
-        }
+        this.xspeed = xspeed;
         
     }
 
