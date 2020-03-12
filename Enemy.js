@@ -7,7 +7,13 @@ class Enemy {
         this.y = y;
         this.yspeed = yspeed;
         this.spaceshipVar= loadImage('spaceship.png');
-        this.xspeed = random(0, 2);
+        
+        if (wave >= 2) {
+            
+            this.xspeed = random(0, 2);
+            
+        }
+        
     }
 
     move() {
