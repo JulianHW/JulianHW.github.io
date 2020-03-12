@@ -140,7 +140,6 @@ function newWave() {
         deadEnemies = 0;
         circles = [];
         enemies = [];
-        enemyCircles = [];
 
         for (var i = 0; i < (20 * wave); i++) {
 
@@ -185,7 +184,6 @@ function restart() {
     alive = true;
     wave = 1;
     deadEnemies = 0;
-    enemyCircles= [];
 
     for (var i = 0; i < (20 * wave); i++) {
 
