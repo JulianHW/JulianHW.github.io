@@ -16,6 +16,7 @@ var enemies = [];
 var alive = true;
 var wave = 1;
 var deadEnemies = 0;
+var randNum = 0;
 
 // ---------------------------------------------
 
@@ -142,6 +143,7 @@ function newWave() {
         deadEnemies = 0;
         circles = [];
         enemies = [];
+        enemyCircles = [];
 
         for (var i = 0; i < (20 * wave); i++) {
 
@@ -186,6 +188,7 @@ function restart() {
     alive = true;
     wave = 1;
     deadEnemies = 0;
+    enemyCircles= [];
 
     for (var i = 0; i < (20 * wave); i++) {
 
@@ -196,3 +199,19 @@ function restart() {
 }
 
 // ---------------------------------------------
+
+function enemyFire() {
+    
+    for (var i = 0; i < enemyCircles; i ++) {
+        
+        randNum = random(0, 1000);
+        
+        if (randNum <= 1) {
+            
+            enemies[i].fire();
+            
+        }
+        
+    }
+    
+}
