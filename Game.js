@@ -214,15 +214,18 @@ function enemyFire() {
     
     for (var i = 0; i < enemies; i ++) {
         
-        randNum = random(0, 100);
+        //randNum = random(0, 100);
         
-        if (randNum <= 1) {
+        //if (randNum <= 1) {
             
             //enemies[i].fire();
             
-            enemyCircles.push(new Ball(enemies[i].x, enemies[i].y, 10));
+            //enemyCircles.push(new Ball(enemies[i].x, enemies[i].y, 10));
             
-        }
+        //}
+        
+        enemies[i].fire();
+        enemyCircles.push(new Ball(enemies[i].x, enemies[i].y, 10));
         
     }
     
