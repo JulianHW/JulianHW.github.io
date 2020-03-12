@@ -11,12 +11,10 @@ function preload() {
 // ---------------------------------------------
 
 var circles = [];
-var enemyCircles = [];
 var enemies = [];
 var alive = true;
 var wave = 1;
 var deadEnemies = 0;
-var randNum = 0;
 
 // ---------------------------------------------
 
@@ -53,15 +51,6 @@ function draw() {
         }
 
         // ---------------------------------------------
-        /*
-        for (var i = 0; i < enemyCircles.length; i ++) {
-            
-            enemyCircles[i].move();
-            enemyCircles[i].show();
-            
-        }
-        */
-        // ---------------------------------------------
 
         for (var i = 0; i < enemies.length; i++) {
 
@@ -76,7 +65,6 @@ function draw() {
         collisionCheck();
         newWave();
         scoreDisplay();
-        //enemyFire();
 
     } else {
 
@@ -208,20 +196,3 @@ function restart() {
 }
 
 // ---------------------------------------------
-/*
-function enemyFire() {
-    
-    for (var i = 0; i < enemies; i ++) {
-        
-        randNum = random(0, 100);
-        
-        if (randNum <= 1) {
-            
-            enemies[i].fire();
-            
-        }
-        
-    }
-    
-}
-*/
