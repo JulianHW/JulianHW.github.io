@@ -55,7 +55,7 @@ function draw() {
 
         // ---------------------------------------------
         
-        for (var i = 0; i < nemyCircles.length; i ++) {
+        for (var i = 0; i < enemyCircles.length; i ++) {
             
             enemyCircles[i].move();
             enemyCircles[i].show();
