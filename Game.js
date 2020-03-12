@@ -217,9 +217,7 @@ function enemyFire() {
         
         if (randNum <= 1) {
             
-            //enemies[i].fire();
-            
-            enemyCircles.push(new Ball(enemies[i].x, enemies[i].y, 10));
+            enemies[i].fire();
             
         }
         
