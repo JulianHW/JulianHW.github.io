@@ -34,10 +34,4 @@ class Enemy {
 
     }
     
-    fire() {
-        
-        enemyCircles.push(new Ball(this.x, this.y, 10));
-        
-    }
-
 }
