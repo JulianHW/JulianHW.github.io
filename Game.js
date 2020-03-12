@@ -25,7 +25,7 @@ function setup() {
 
     for (var i = 0; i < (20 * wave); i++) {
 
-        enemies.push(new Enemy(random(0, width), -50, random(2, 6)));
+        enemies.push(new Enemy(random(0, width), -50, random(2, 6), 0));
 
     }
 
@@ -188,7 +188,7 @@ function restart() {
 
     for (var i = 0; i < (20 * wave); i++) {
 
-        enemies.push(new Enemy(random(0, width), -50, random(2, 6)));
+        enemies.push(new Enemy(random(0, width), -50, random(2, 6), 0));
 
     }
 
