@@ -81,7 +81,7 @@ function mousePressed() {
 
     if (alive == true) {
 
-        circles.push(new Ball(mouseX, 550));
+        circles.push(new Ball(mouseX, 550, -10));
 
     }
 
