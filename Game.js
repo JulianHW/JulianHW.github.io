@@ -11,6 +11,7 @@ function preload() {
 // ---------------------------------------------
 
 var circles = [];
+var enemyCircles = [];
 var enemies = [];
 var alive = true;
 var wave = 1;
