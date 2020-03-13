@@ -56,6 +56,7 @@ function draw() {
 
             enemies[i].move();
             enemies[i].show();
+            enemies[i].bounce();
 
         }
 
