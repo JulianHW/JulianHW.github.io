@@ -34,4 +34,14 @@ class Enemy {
 
     }
     
+    bounce() {
+        
+        if (this.x >= width || this.x <= 0) {
+            
+            this.xspeed = this.xspeed * -1;
+            
+        }
+        
+    }
+    
 }
